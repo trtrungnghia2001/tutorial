@@ -45,7 +45,7 @@ const MongoDbPage = () => {
   }, [idEdit]);
 
   return (
-    <div className="flex items-start gap-12 p-3 py-10 max-w-7xl w-full mx-auto">
+    <div className="flex flex-col md:flex-row md:items-start gap-12 p-3 py-10 max-w-7xl w-full mx-auto">
       {/* left */}
       <div className="max-w-md w-full">
         <h3 className="mb-6 font-semibold text-xl text-center">MongodbPage</h3>

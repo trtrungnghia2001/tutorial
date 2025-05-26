@@ -39,14 +39,14 @@ export const apiSlice = createApi({
         method: "put",
         body: task,
       }),
-      invalidatesTags: (result) => [{ id: result?._id, type: "task" }],
+      invalidatesTags: (result) => [{ type: "task" }],
     }),
     deleteId: builder.mutation<ITask, string>({
       query: (id) => ({
         url: "delete/" + id,
         method: "delete",
       }),
-      invalidatesTags: (result) => [{ id: result?._id, type: "task" }],
+      invalidatesTags: (result) => [{ type: "task" }],
     }),
   }),
 });
