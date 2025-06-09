@@ -19,7 +19,6 @@ router.get("/", async (req, res) => {
       $addFields: {
         isFavorite: {
           $gt: [
-            // Kiểm tra xem có phần tử nào trong favoriteStatus mà userId trùng khớp không
             {
               $size: "$favoriteStatus",
             },
